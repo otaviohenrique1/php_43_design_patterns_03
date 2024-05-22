@@ -1,11 +1,11 @@
 <?php
 
-namespace Alura\DesignPattern\Flyweight;
+namespace Alura\DesignPattern\Flyweight\Pedido;
 
 use DateTimeInterface;
 
 /* Flyweight */
-class DadosExtrinsecosPedido
+class TemplatePedido
 {
   private string $nomeCliente;
   private DateTimeInterface $dataFinalizacao;
