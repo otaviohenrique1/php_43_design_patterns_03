@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\DesignPattern\Builder\Venda;
+namespace Alura\DesignPattern\Prototype\Venda;
 
 use DateTimeInterface;
 
