@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\DesignPattern\Prototype\EstadosOrcamento;
+namespace Alura\DesignPattern\Singleton\EstadosOrcamento;
 
-use Alura\DesignPattern\Prototype\Orcamento;
+use Alura\DesignPattern\Singleton\Orcamento;
 use DomainException;
 
 abstract class EstadoOrcamento
