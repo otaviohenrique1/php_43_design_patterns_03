@@ -1,8 +1,9 @@
 <?php
-use Alura\DesignPattern\AbstractFactory\Venda\VendaProdutoFactory;
-use Alura\DesignPattern\AbstractFactory\Venda\VendaServicoFactory;
 
 require_once 'vendor/autoload.php';
+
+use Alura\DesignPattern\AbstractFactory\Venda\VendaProdutoFactory;
+use Alura\DesignPattern\AbstractFactory\Venda\VendaServicoFactory;
 
 $fabricaProduto = new VendaServicoFactory('Vinicius Dias');
 $vendaServico = $fabricaProduto->criarVenda();

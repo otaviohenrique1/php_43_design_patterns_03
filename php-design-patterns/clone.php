@@ -2,8 +2,8 @@
 
 require_once 'vendor/autoload.php';
 
-use Alura\DesignPattern\Builder\ItemOrcamento;
-use Alura\DesignPattern\Builder\NotaFiscal\ConstrutorNotaFiscalProduto;
+use Alura\DesignPattern\Prototype\ItemOrcamento;
+use Alura\DesignPattern\Prototype\NotaFiscal\ConstrutorNotaFiscalProduto;
 
 $builder = new ConstrutorNotaFiscalProduto();
 
@@ -23,4 +23,8 @@ $notaFiscal = $builder->paraEmpresa('1234654', 'Vinicius Dias Tecnologia')
   ->comObservacoes('Esta nota fiscal foi construída com um construtor')
   ->constroi();
 
-echo $notaFiscal->valor();
+// $notaFiscal2 = $notaFiscal->clonar();
+$notaFiscal2 = clone $notaFiscal;
+$notaFiscal2->itens[] = new ItemOrcamento();
+
+var_dump($notaFiscal, $notaFiscal2);
