@@ -10,6 +10,7 @@ class FileLogManager extends LogManager
     $this->caminhoArquivo = $caminhoArquivo;
   }
 
+  /* FactoryMethod */
   function criaLogWritter(): LogWritter {
     return new FileLogWritter($this->caminhoArquivo);
   }
